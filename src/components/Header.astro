@@ -1,0 +1,50 @@
+---
+import Instagram from "../components/iconos/Instagram.astro";
+import Facebook from "../components/iconos/Facebook.astro";
+---
+
+<header class="py-6 px-10 flex items-center justify-between w-full top-0 z-1000 absolute z-20">
+  <div>
+    <h1>Safita</h1>
+  </div>
+  <nav>
+    <ul class="flex gap-3">
+      <li><a href="/" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Home</a></li>
+      <li><a href="#menu" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Menu</a></li>
+      <li><a href="#" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Quienes Somos</a></li>
+      <li><a href="#contacto" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Contacto</a></li>
+    </ul>
+  </nav>
+  <div>
+    <ul class="flex gap-3">
+      <li><a href="#"><Instagram /></a></li>
+      <li><a href="#"><Facebook /></a></li>
+    </ul>
+  </div>
+</header>
+
+<style>
+  @font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src:
+      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff2) format("woff2"),
+      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+      U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  h1 {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  a {
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+  }
+</style>
