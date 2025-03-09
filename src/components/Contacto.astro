@@ -1,11 +1,18 @@
-<section id="contacto" class="py-10 px-20 w-full mx-auto bg-slate-300">
+---
+import Mensaje from "./iconos/Mensaje.astro";
+import Instagram from "./iconos/Instagram.astro";
+import Facebook from "./iconos/Facebook.astro";
+import Direccion from "./iconos/Direccion.astro";
+---
+
+<section id="contacto" class="py-10 px-20 w-full mx-auto bg-orange-100">
   <div class="grid grid-cols-2 gap-10 max-w-7xl mx-auto">
     <div class="w-50">
       <img src="./chilean.jpg" alt="" class="border rounded-2xl" />
     </div>
     <div class="flex flex-col justify-start gap-4">
-      <h2 class="text-red-600 text-4xl font-semibold">Kawa-safita</h2>
-      <h1 class="text-black text-5xl">Contactanos</h1>
+      <h2 class="text-red-600 text-4xl font-semibold">Kawa-Safita</h2>
+      <h1 class="text-black text-5xl font-semibold">Contactanos</h1>
       <p>
         Discover the charm of Bistro, an authentic English restaurant offering a taste of Ireland in every bite. Indulge in traditional English
         cuisine crafted with care, complemented by warm hospitality and a cozy ambiance. From hearty stews to savory pies, experience the flavors of
@@ -13,10 +20,10 @@
       </p>
 
       <ul>
-        <li>Whatsapp</li>
-        <li>Direccion</li>
-        <li>Instagram</li>
-        <li>Facebook</li>
+        <li class="text-2xl"><Mensaje />Whatsapp</li>
+        <li class="text-2xl"><Direccion />Direccion</li>
+        <li class="text-2xl"><Instagram />Instagram</li>
+        <li class="text-2xl"><Facebook />Facebook</li>
       </ul>
     </div>
   </div>

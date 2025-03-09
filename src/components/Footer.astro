@@ -1,30 +1,36 @@
+---
+import Facebook from "./iconos/Facebook.astro";
+import Instagram from "./iconos/Instagram.astro";
+import Logo from "../components/iconos/Safita-Logo.astro";
+---
+
 <footer class="bg-red-600 text-white text-center p-4">
-  <div class="grid grid-cols-3 gap-4">
+  <div class="grid grid-cols-2 gap-4">
     <div>
-      <h1>LOGO</h1>
+      <Logo />
       <ul>
-        <li>Direccion</li>
-        <li>Direccion</li>
-        <li>Direccion</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Quienes somos</a></li>
+        <li><a href="">Contacto</a></li>
       </ul>
     </div>
 
     <div>
-      <h1>LOGO</h1>
+      <Logo />
       <ul>
-        <li>Direccion</li>
-        <li>Direccion</li>
-        <li>Direccion</li>
+        <li>Juan Jose Latorre 500</li>
+        <li>Mejillones</li>
+        <li>+569-5656-5656</li>
       </ul>
     </div>
-
-    <div>
-      <h1>LOGO</h1>
-      <ul>
-        <li>Direccion</li>
-        <li>Direccion</li>
-        <li>Direccion</li>
-      </ul>
-    </div>
+  </div>
+  <div class="flex justify-center gap-4 m-4 p-4">
+    <h2>Siguenos:</h2>
+    <a href=""><Facebook /></a>
+    <a href=""><Instagram /></a>
+  </div>
+  <div class="m-4 p-4">
+    <h2>Todos los derechos reservados © - 2025 - Hecho en Astro By <a href="" class="font-bold">83Studio</a></h2>
   </div>
 </footer>
