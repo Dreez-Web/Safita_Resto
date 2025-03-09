@@ -6,24 +6,35 @@ import Direccion from "./iconos/Direccion.astro";
 ---
 
 <section id="contacto" class="py-10 px-20 w-full mx-auto bg-orange-100">
-  <div class="grid grid-cols-2 gap-10 max-w-7xl mx-auto">
+  <div class="flex flex-col sm:grid sm:grid-cols-2 gap-10 max-w-7xl mx-auto">
     <div class="w-50">
       <img src="./chilean.jpg" alt="" class="border rounded-2xl" />
     </div>
     <div class="flex flex-col justify-start gap-4">
       <h2 class="text-red-600 text-4xl font-semibold">Kawa-Safita</h2>
-      <h1 class="text-black text-5xl font-semibold">Contactanos</h1>
-      <p>
+      <h1 class="text-black text-xl font-semibold sm:text-5xl sm:font-semibold">Contactanos</h1>
+      <p class="">
         Discover the charm of Bistro, an authentic English restaurant offering a taste of Ireland in every bite. Indulge in traditional English
         cuisine crafted with care, complemented by warm hospitality and a cozy ambiance. From hearty stews to savory pies, experience the flavors of
         English at Bistro
       </p>
 
       <ul>
-        <li class="text-2xl"><Mensaje />Whatsapp</li>
-        <li class="text-2xl"><Direccion />Direccion</li>
-        <li class="text-2xl"><Instagram />Instagram</li>
-        <li class="text-2xl"><Facebook />Facebook</li>
+        <div class="flex items-center gap-2">
+          <Mensaje />
+          <li class="text-2xl">Whatsapp</li>
+        </div>
+        <div class="flex items-center gap-2">
+          <Direccion />
+          <li class="text-2xl">Direccion</li>
+        </div>
+        <div class="flex items-center gap-2">
+          <Instagram />
+          <li class="text-2xl">Instagram</li>
+        </div>
+        <div class="flex items-center gap-2">
+          <Facebook /><li class="text-2xl">Facebook</li>
+        </div>
       </ul>
     </div>
   </div>

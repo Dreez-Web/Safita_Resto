@@ -2,21 +2,25 @@
 import Instagram from "../components/iconos/Instagram.astro";
 import Facebook from "../components/iconos/Facebook.astro";
 import Logo from "../components/iconos/Safita-Logo.astro";
+import Hamb from "../components/iconos/Hamb.astro";
+import Close from "../components/iconos/Close.astro";
 ---
 
 <header class="py-6 px-10 flex items-center justify-between w-full top-0 z-1000 absolute z-20">
-  <div>
+  <div class="hidden sm:block">
     <Logo />
   </div>
-  <nav>
-    <ul class="flex gap-3">
+  <button id="abrir" class="text-white sm:hidden"><Hamb /></button>
+  <nav id="nav" class="hidden sm:flex">
+    <ul class="flex flex-col bg-red-500 p-3 rounded-2xl gap-7 sm:border-none sm:bg-inherit sm:flex-row sm:gap-3">
+      <button id="cerrar" class="text-white sm:hidden"><Close /></button>
       <li><a href="/" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Home</a></li>
       <li><a href="#menu" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Menu</a></li>
       <li><a href="#contacto" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Quienes Somos</a></li>
       <li><a href="#contacto" class="hover:bg-red-600 p-2 hover:border hover:rounded-2xl hover:border-none">Contacto</a></li>
     </ul>
   </nav>
-  <div>
+  <div class="hidden sm:block">
     <ul class="flex gap-3">
       <li class="hover:bg-red-600 hover:rounded-xl">
         <a href="#"><Instagram /></a>
@@ -51,3 +55,17 @@ import Logo from "../components/iconos/Safita-Logo.astro";
     color: white;
   }
 </style>
+
+<script>
+  document.getElementById("abrir")?.addEventListener("click", () => {
+    document.getElementById("nav")?.classList.remove("hidden");
+    document.getElementById("abrir")?.classList.add("hidden");
+    document.getElementById("cerrar")?.classList.remove("hidden");
+  });
+
+  document.getElementById("cerrar")?.addEventListener("click", () => {
+    document.getElementById("nav")?.classList.add("hidden");
+    document.getElementById("abrir")?.classList.remove("hidden");
+    document.getElementById("cerrar")?.classList.add("hidden");
+  });
+</script>
