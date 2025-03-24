@@ -9,6 +9,7 @@ import Footer from "../components/Footer.astro";
 import MenuGrid from "../components/MenuGrid.astro";
 import Section from "../components/Section.astro";
 import Lista from "../components/SeccionLista.astro";
+import Empresas from "../components/Empresas.astro";
 ---
 
 <Layout title="Bienvenidos a Safita">
@@ -21,8 +22,16 @@ import Lista from "../components/SeccionLista.astro";
     <MenuGrid />
 
     <Section titulo="Cafeteria" id="cafeteria" />
-    <Lista nombre="Cafe" descripcion="Rico cafe con aroma a cafe" precio="$1500" />
-    <Lista nombre="Te Chai" descripcion="Rico chai con aroma a chai" precio="$2000" />
+    <Lista
+      nombre="Cafe"
+      descripcion="Rico cafe con aroma a cafe"
+      precio="$1500"
+    />
+    <Lista
+      nombre="Te Chai"
+      descripcion="Rico chai con aroma a chai"
+      precio="$2000"
+    />
 
     <Section titulo="Almuerzo" id="almuerzo" />
 
@@ -31,6 +40,8 @@ import Lista from "../components/SeccionLista.astro";
     <Section titulo="Postres" id="postres" />
 
     <Section titulo="Cena" id="cena" />
+
+    <Empresas />
 
     <Contacto />
   </main>
@@ -45,9 +56,12 @@ import Lista from "../components/SeccionLista.astro";
     font-display: swap;
     font-weight: 300, 400, 500, 600, 700;
     src:
-      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff2) format("woff2"),
-      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff) format("woff");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff2)
+        format("woff2"),
+      url(https://cdn.jsdelivr.net/fontsource/fonts/lato@latest/latin-400-normal.woff)
+        format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
       U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 </style>
